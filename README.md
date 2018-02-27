@@ -4,9 +4,9 @@ Mixed mode (GUI + Console) MultiThread downloader.
 Console mode is finished, some GUI Features are under development.
 ```
 Usage:
-         -n set threads count
+         -n set threads count, mandatory
          -l set download speed, default value 1073741824 used if not specified
-         -f set download list file path:
+         -f set download list file path,mandatory:
            file structure (line separator is "/r/n", empty lines ignored, line after "#" is commented):
            ================================================FileBegin===============================================================
            #http://i1.wp.com/www.thomasmaurer.ch/wp-content/uploads/2013/08/Configure-SMB-Bandwidth-Limit-via-PowerShell.png
@@ -14,7 +14,7 @@ Usage:
            https://theconservativetreehouse.files.wordpress.com/2014/12/java-sea.jpg
            https://assets-cdn.github.com/images/modules/site/home-illo-conversation.svg
            =================================================FileEnd===============================================================
-        -o set files output directory
+        -o set files output directory, mandatory
         -prox set authentification proxy configuration if required, format (username:password:hostname:port)
 ```        
-If nothing was specified, GUI runs.
+If nothing specified, GUI runs.
